@@ -1,0 +1,241 @@
+* {
+  font-family: avenir-next, sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.blankRow {
+  height: 1em !important;
+}
+
+body {
+  margin: 0px;
+}
+
+#bodyHome {
+  background-image: url('images/background.svg') !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(69, 73, 51);
+  padding-bottom: 20px;
+}
+
+#bodyMain {
+  margin: 12px;
+  background-color: white;
+  height: auto;
+  min-height: 638px;
+  padding: 20px 0px 20px 40px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+#imgPhoto {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  box-shadow: 0px 0px 3.33px 3.33px rgba(255, 255, 255, 1), 0px 0px 3.33px 6.67px rgba(255, 255, 255, 0.667), 0px 0px 3.33px 10px rgba(255, 255, 255, 0.333);
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+.link {
+  max-height: 67px;
+  max-width: 67px;
+  padding: 0px 10px;
+}
+
+#logo h1 {
+  display: inline;
+  padding-right: 25px;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
+#tblNav {
+  display: inline;
+}
+
+.mainText {
+  width: auto;
+  font-size: 72px;
+  padding-top: 40px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 7.2px 3.6px black;
+  -webkit-text-stroke-width: 3.6px;
+  -webkit-text-stroke-color: black;
+}
+
+#nav {
+  background-color: white;
+  opacity: 0.75;
+  width: 100%
+}
+
+#tblNav {
+  vertical-align: bottom;
+}
+
+#tblNav td {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  padding: 0px 50px 0px 0px;
+  margin: 4px 0px -10px 0px;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+
+#tblNav td:hover {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  font-size: 1.5rem;
+  padding: 0px 50px 0px 0px;
+}
+
+.resumeDate {
+  color: blue;
+  font-size: 10px;
+  vertical-align: top;
+}
+
+.resumeSectionTitle {
+  vertical-align: bottom;
+}
+
+.ulResume {
+  margin-left: 5px;
+  padding-left: 10px;
+}
+
+.dataTables_filter {
+   width: 50%;
+   float: right;
+   text-align: right;
+   display: inline;
+   vertical-align: bottom;
+   padding: 5px 0px;
+}
+
+select[name="tblCoursesInner_length"] {
+  width: 100px;
+  display: inline;
+  padding-bottom: 10px;
+}
+
+.social {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2.5px 2.5px rgb(255, 255, 255);
+}
+
+.socialLogo {
+  max-height: 67px;
+  max-width: 67px;
+}
+
+.social:hover {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  box-shadow: 0px 0px 7.5px 7.5px rgb(255, 255, 255)
+}
+
+li.paginate_button.page-item.active a {
+  color: white !important;
+}
+
+#tblCoursesInner tbody tr td a:hover {
+  text-decoration: underline !important;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3s steps(24, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0}
+  to { width: 100% }
+
+}
